@@ -3,9 +3,11 @@
 "Vim Plugin Manager Settings (manager is Vundle)-------------------------------------------------------------------------------------"
 set nocompatible "be iMproved, required"
 filetype off 
+
 "Set the runtime path to include Vundle and initialize"
 set rtp+=~/.vim/bundle/Vundle.vim 
 call vundle#begin()
+
 "let Vundle manage Vundle, required"
 Plugin 'VundleVim/Vundle.vim'
 
@@ -17,9 +19,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 
+"For the One Dark theme used later in this .vimrc file"
+Plugin 'joshdick/onedark.vim'
 
 "All of your Plugins must be added before the following line"
 call vundle#end() 
+
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:"
 "filetype plugin on"
@@ -32,7 +37,6 @@ filetype plugin indent on
 "
 " see :h vundle for more details or wiki for FAQ"
 " Put your non-Plugin stuff after this line"
-
 
 "Misc-------------------------------------------------------------------------------------"
 set encoding=utf8 "Set's UTF-8 as the standard encoding and en_US as the standard language"
